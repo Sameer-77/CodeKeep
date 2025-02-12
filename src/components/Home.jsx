@@ -87,7 +87,7 @@ const Home = () => {
                 onClick={createPaste}
                 disabled={!title.trim() || !value.trim()}
             >
-                {pasteId ? 'Update Paste' : 'Create Paste'}
+                {pasteId ? 'Update Code' : 'Create Code File'}
             </button>
         </div>
     );
