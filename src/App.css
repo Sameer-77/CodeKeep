@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2f;
+  /* Dark blue-purple shade */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+
+/* Container */
+#root {
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #646cff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4d5ae5;
+}
+
+/* Paste Container */
+.paste-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.paste-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.paste-card:hover {
+  transform: scale(1.02);
+}
+
+/* Paste Actions */
+.paste-actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.paste-actions button {
+  background: #ff6b6b;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.paste-actions button:hover {
+  background: #ff3b3b;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #222;
+  border-radius: 8px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #646cff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paste-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Different colors for buttons */
+button a {
+  text-decoration: none;
+  color: white;
+  /* Ensure text is visible */
+  display: block;
+  padding: 8px 12px;
+}
+
+button:nth-child(1) {
+  background-color: #3498db;
+}
+
+/* Edit Button */
+button:nth-child(2) {
+  background-color: #2ecc71;
+}
+
+/* View Button */
+button:nth-child(3) {
+  background-color: #f39c12;
+}
+
+/* Copy Button */
+button:nth-child(4) {
+  background-color: #e74c3c;
+}
+
+/* Delete Button */
+button:nth-child(5) {
+  background-color: #9b59b6;
+}
+
+/* Share Button */
+
+/* Hover effect */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Enhanced Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  background: linear-gradient(to right, #f0f0f0, #d9d9d9);
+  /* Light gray gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+  /* Slightly darker placeholder */
+  opacity: 0.8;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #999;
+  box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
+}
+
+/* Make the textarea more visually appealing */
+textarea {
+  resize: none;
+  /* Prevents resizing */
+  min-height: 150px;
+  background: linear-gradient(to right, #e8e8e8, #d0d0d0);
+  /* Soft gray gradient */
+}
